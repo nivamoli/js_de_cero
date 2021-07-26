@@ -1,13 +1,13 @@
 // Es el alcance que tienen las variables 
 // depende mucho de donde definamos una variable para saber si tendremos acceso a ella o no
 
-var nombre = 'Scope Global'; 
+let nombre = 'Scope Global'; 
 
 // este es el scope global 
 // aquí existen todas las funciones y variables a definir. 
 
 function scopeLocal() {
-    var apellido = "Scope local" // El interior de esta función es un Scope local.
+    let apellido = "Scope local" // El interior de esta función es un Scope local.
     // solo se puede acceder a esa variable dentro de esta función. 
     console.log(`${nombre} ${apellido}`); // En un scope local podemos acceder a las variables que estén en el scope global. 
 }

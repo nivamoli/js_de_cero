@@ -33,7 +33,6 @@ articulos.forEach(function(articulo) {
 // este método no me devuelve un nuevo array sino que filtra del array original.
 
 
-
 var articulosBaratos = articulos.some(function(articulo){
     return articulo.precio <= 300;
 })

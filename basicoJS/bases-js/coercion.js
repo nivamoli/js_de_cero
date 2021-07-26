@@ -11,7 +11,7 @@
 
 var coercion = 4 * '7';
 console.log(coercion)
-// output = tipo de dato Number = 28 
+// output = tipo de dato Number = 28
 
 var coercion_concatenada = 4 + "2"; // aquí no realiza la operación, solo agregar el 4 al 2 en un string. 
 console.log(coercion_concatenada); 

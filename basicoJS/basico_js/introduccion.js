@@ -21,7 +21,7 @@ var err = Error;
 // -- datos definidos por el usuario/programador 
 
 var func_simple = function() {};
-var clases = function Persona() {}; 
+var funcionConstructora = function Persona(nombre) {this.nombre = nombre;}; 
 
 // -- Arrays 
 
@@ -30,7 +30,7 @@ var arr = [0, 1, 2, 3, 4];
 // -- Objetos 
 
 var obj = {}; 
-var objeto_global = "global objetc";
+var objeto_global = "global object";
 var prototipo = console.log(func_simple.prototype);
 
 

@@ -1,4 +1,4 @@
-// hay 2 tipos de funciones: declarativas y de expresión o expresivas
+// hay 2 tipos de funciones: declarativas y de expresión/expresivas
 
 // -----  funcion declarativa: 
 

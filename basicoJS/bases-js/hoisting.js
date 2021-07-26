@@ -17,6 +17,6 @@ hoisting();
 
 function hoisting() {
     console.log('Soy una función con hoisting')
-} // aquí las funciones javascript automáticamente la sube arriba de todo el código por lo que la ejecuta sin problema. 
+} // aquí las funciones, javascript automáticamente la sube arriba de todo el código por lo que la ejecuta sin problema. 
 
 // como buena práctica las funciones y variables hay que declararlas al inicio del código para evitar los problemas de hoisting. 

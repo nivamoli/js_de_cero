@@ -13,7 +13,7 @@ console.log(frutas[0])
 
 // métodos 
 
-frutas.push('Cereza'); // .push nos permite agregar elementos a un array
+frutas.push('Cereza'); // .push nos permite agregar elementos a un array en última posición.
 console.log(frutas)
 
 
