@@ -6,11 +6,6 @@
 // Área del círculo = Radio al cuadrado * PI.
 
 
-
-
-
-
-
 // Código para el cuadrado:
 
 console.group("Cuadrados")
@@ -33,13 +28,6 @@ areaCuadrado(56);
 // console.log(`El area del cuadrado es: ${areaCuadrado}cm2`);
 
 console.groupEnd();
-
-
-
-
-
-
-
 
 
 // Código para el triángulo: 
@@ -73,14 +61,6 @@ areaTriangulo(5, 23);
 //     El área del triángulo es de: ${areaTriangulo}cm2`)
 
 console.groupEnd();
-
-
-
-
-
-
-
-
 
 
 // Código para el círculo:
@@ -118,3 +98,20 @@ function areaCirculo(radio) {
 //     El área del circulo es de: ${areaCirculo}cm2`)
 
 console.groupEnd();
+
+
+// interactuar con HTML 
+
+function calcularPerimetroCuadrado() {
+    const input = document.getElementById("input-cuadrado");
+    const valor = input.value
+    const perimetro = perimetroCuadrado(valor);
+    alert(`El perímetro del cuadrado es: ${perimetro}`)
+}
+
+function calcularAreaCuadrado() {
+    const input = document.getElementById("input-cuadrado");
+    const valor = input.value; 
+    const area = areaCuadrado(valor); 
+    alert(`El Área del cuadrado es: ${area}`);
+}

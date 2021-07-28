@@ -4,10 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;300;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
     <title>Figuras geométricas</title>
 </head>
 <body>
-    <h1>Figuras geométricas</h1>
+    <header class="header">
+        <h1 class="header__title">Figuras geométricas</h1>
+        <p class="header__pgraph">Calcula el perímetro y área de las siguientes figuras:</p>
+    </header>
+    <section class="figuras">
+        <div class="form-container cuadrado">
+            <h2 class="title-2">Calcula el área y perímetro de un cuadrado</h2>
+            <form action="" class="form-cuadrado">
+                <label for="input-cuadrado" class="form-cuadrado__label">
+                    <span class="form-cuadrado__label--span">Ingresa el valor de un lado del cuadrado:</span>
+                    <input type="number" id="input-cuadrado" name="perimetro-cuadrado" class="form-cuadrado__label--input">
+                    <button type="button" onclick="calcularPerimetroCuadrado()" class="button">Calcular el perímetro</button>
+                    <button type="button" onclick="calcularAreaCuadrado()" class="button">Calcular el área</button>
+                </label>
+            </form>
+        </div>
+        <div class="form-container triangulo">
+            <h2 class="title-2">Calcula el área y perímetro de un triángulo</h2>
+            <form action="" class="form-cuadrado">
+                <label for="input-cuadrado" class="form-cuadrado__label">
+                    <span class="form-cuadrado__label--span">Ingresa el valor de un lado del cuadrado:</span>
+                    <input type="number" id="input-cuadrado" name="perimetro-cuadrado" class="form-cuadrado__label--input">
+                    <button type="button" onclick="calcularPerimetroCuadrado()" class="button">Calcular el perímetro</button>
+                    <button type="button" onclick="calcularAreaCuadrado()" class="button">Calcular el área</button>
+                </label>
+            </form>
+        </div>
+        <div class="form-container circulo">
+            <h2 class="title-2">Calcula el área y perímetro de un circulo</h2>
+            <form action="" class="form-cuadrado">
+                <label for="input-cuadrado" class="form-cuadrado__label">
+                    <span class="form-cuadrado__label--span">Ingresa el valor de un lado del cuadrado:</span>
+                    <input type="number" id="input-cuadrado" name="perimetro-cuadrado" class="form-cuadrado__label--input">
+                    <button type="button" onclick="calcularPerimetroCuadrado()" class="form-cuadrado__label--button1 button">Calcular el perímetro</button>
+                    <button type="button" onclick="calcularAreaCuadrado()" class="form-cuadrado__label--button2 button">Calcular el área</button>
+                </label>
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>Desarrollado por<a href="https://github.com/nivamoli" target="_blank" class="footer__link"> Nicolás Valencia Molina</a></p>
+    </footer>
     <script src="./figuras_geometricas.js"></script>
 </body>
 </html>

@@ -1,0 +1,116 @@
+:root {
+    --color-principal: #171717;
+    --color-secundario: #444444;
+    --color-complementario: #DA0037;
+    --color-fuente: #EDEDED;
+    --fuente-principal: 'Fira Sans', sans-serif;
+    --fuente-secundaria: 'Fjalla One', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--fuente-secundaria);
+}
+
+h1.header__title {
+    font-size: 70px;
+    margin-bottom: 10px;
+}
+
+p.header__pgraph {
+    font-size: 20px;
+}
+
+h2.title-2 {
+    width: 250px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+body {
+    background-color: #171717;
+    color: var(--color-fuente);
+    font-family: var(--fuente-principal);
+}
+
+header.header {
+    text-align: center;
+    margin: 70px 0;
+}
+
+section.figuras {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 60vh;
+}
+
+div.form-container {
+    text-align: center;
+    background-color: var(--color-secundario);
+    padding: 30px;
+    height: 400px;
+    border-radius: 50px;
+}
+
+form.form-cuadrado {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+label.form-cuadrado__label {
+    display: flex;
+    flex-direction: column;
+}
+
+span.form-cuadrado__label--span {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+input.form-cuadrado__label--input {
+    width: 200px;
+    margin: 0 auto;
+    height: 40px;
+    margin-bottom: 40px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 22px;
+    outline-color: var(--color-complementario);
+}
+
+button.button {
+    cursor: pointer;
+    padding: 20px;
+    border: none;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    background-color: var(--color-principal);
+    color: var(--color-complementario);
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-family: var(--fuente-secundaria);
+}
+
+footer.footer {
+    color: var(--color-principal);
+    height: 50px;
+    background-color: var(--color-fuente);
+    text-align: center;
+    padding-top: 15px;
+}
+
+footer a.footer__link {
+    text-decoration: none;
+    color: var(--color-complementario);
+}
+
+footer a.footer__link:hover {
+    text-decoration: underline;
+}
