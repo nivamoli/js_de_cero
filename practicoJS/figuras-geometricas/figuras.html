@@ -56,12 +56,17 @@
         <div class="form-container circulo">
             <h2 class="title-2">Calcula el área y perímetro de un circulo</h2>
             <form action="" class="form-cuadrado">
-                <label for="input-cuadrado" class="form-cuadrado__label">
-                    <span class="form-cuadrado__label--span">Ingresa el valor de un lado del cuadrado:</span>
-                    <input type="number" id="input-cuadrado" name="perimetro-cuadrado" class="form-cuadrado__label--input">
-                    <button type="button" onclick="calcularPerimetroTriangulo()" class="form-cuadrado__label--button1 button">Calcular el perímetro</button>
-                    <button type="button" onclick="calcularAreaTriangulo()" class="form-cuadrado__label--button2 button">Calcular el área</button>
+                <label for="radio-circulo" class="form-cuadrado__label">
+                    <span class="form-cuadrado__label--span">Ingresa el valor del radio del círculo:</span>
+                    <input type="number" id="radio-circulo" name="radio-circulo" class="form-cuadrado__label--input input-triangulo">
                 </label>
+                <label for="diametro-circulo" class="form-cuadrado__label">
+                    <span class="form-cuadrado__label--span">Ingresa el valor del diámetro del círculo:</span>
+                    <input type="number" id="diametro-circulo" name="diametro-circulo" class="form-cuadrado__label--input input-triangulo">
+                </label>
+                <button type="button" onclick="calcularDiametroCirculo()" class="form-cuadrado__label--button1 button boton-circulo">Calcular el diámetro</button>
+                <button type="button" onclick="calcularPerimetroCirculo()" class="form-cuadrado__label--button2 button">Calcular el perímetro</button>
+                <button type="button" onclick="calcularAreaCirculo()" class="form-cuadrado__label--button2 button">Calcular el área</button>
             </form>
         </div>
     </section>
