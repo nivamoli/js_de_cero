@@ -76,6 +76,7 @@ label.form-cuadrado__label {
     flex-direction: column;
 }
 
+
 span.form-cuadrado__label--span {
     margin-top: 20px;
     margin-bottom: 10px;
@@ -107,6 +108,10 @@ button.button {
     font-size: 16px;
     letter-spacing: 2px;
     font-family: var(--fuente-secundaria);
+}
+
+button.boton-circulo {
+    margin-top: 40px;
 }
 
 footer.footer {
