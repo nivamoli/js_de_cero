@@ -54,8 +54,15 @@ div.form-container {
     text-align: center;
     background-color: var(--color-secundario);
     padding: 30px;
-    height: 400px;
+    min-height: 300px;
     border-radius: 50px;
+    margin-bottom: 30px;
+}
+
+div.buttons-triangulo {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
 }
 
 form.form-cuadrado {
@@ -85,6 +92,10 @@ input.form-cuadrado__label--input {
     outline-color: var(--color-complementario);
 }
 
+input.input-triangulo {
+    margin-bottom: 0px;
+}
+
 button.button {
     cursor: pointer;
     padding: 20px;
@@ -104,6 +115,7 @@ footer.footer {
     background-color: var(--color-fuente);
     text-align: center;
     padding-top: 15px;
+    margin-top: 250px;
 }
 
 footer a.footer__link {

@@ -29,14 +29,28 @@
             </form>
         </div>
         <div class="form-container triangulo">
-            <h2 class="title-2">Calcula el área y perímetro de un triángulo</h2>
-            <form action="" class="form-cuadrado">
-                <label for="input-cuadrado" class="form-cuadrado__label">
-                    <span class="form-cuadrado__label--span">Ingresa el valor de un lado del cuadrado:</span>
-                    <input type="number" id="input-cuadrado" name="perimetro-cuadrado" class="form-cuadrado__label--input">
-                    <button type="button" onclick="calcularPerimetroCuadrado()" class="button">Calcular el perímetro</button>
-                    <button type="button" onclick="calcularAreaCuadrado()" class="button">Calcular el área</button>
+            <h2 class="title-2">Calcula el área y el perímetro de un triángulo</h2>
+            <form action="" class="form-triangulo">
+                <label for="lado-triangulo-1" class="form-cuadrado__label">
+                    <span class="form-cuadrado__label--span">Ingresa el valor del primer lado del triangulo</span>
+                    <input type="number" id="lado-triangulo-1" name="lado-triangulo-1" class="form-cuadrado__label--input input-triangulo">
                 </label>
+                <label for="lado-triangulo-2" class="form-cuadrado__label">
+                    <span class="form-cuadrado__label--span">Ingresa el valor del segundo lado del triangulo</span>
+                    <input type="number" id="lado-triangulo-2" name="lado-triangulo-2" class="form-cuadrado__label--input input-triangulo">
+                </label>
+                <label for="base-triangulo" class="form-cuadrado__label">
+                    <span class="form-cuadrado__label--span">Ingresa el valor de la base del triangulo</span>
+                    <input type="number" id="base-triangulo" name="base-triangulo" class="form-cuadrado__label--input input-triangulo">
+                </label>
+                <label for="altura-triangulo" class="form-cuadrado__label">
+                    <span class="form-cuadrado__label--span">Ingresa la altura del triangulo</span>
+                    <input type="number" id="altura-triangulo" name="altura-triangulo" class="form-cuadrado__label--input input-triangulo">
+                </label>
+                <div class="buttons-triangulo">
+                    <button type="button" onclick="calcularPerimetroTriangulo()" class="button">Calcular el perímetro</button>
+                    <button type="button" onclick="calcularAreaTriangulo()" class="button">Calcular el área</button>
+                </div>
             </form>
         </div>
         <div class="form-container circulo">
@@ -45,8 +59,8 @@
                 <label for="input-cuadrado" class="form-cuadrado__label">
                     <span class="form-cuadrado__label--span">Ingresa el valor de un lado del cuadrado:</span>
                     <input type="number" id="input-cuadrado" name="perimetro-cuadrado" class="form-cuadrado__label--input">
-                    <button type="button" onclick="calcularPerimetroCuadrado()" class="form-cuadrado__label--button1 button">Calcular el perímetro</button>
-                    <button type="button" onclick="calcularAreaCuadrado()" class="form-cuadrado__label--button2 button">Calcular el área</button>
+                    <button type="button" onclick="calcularPerimetroTriangulo()" class="form-cuadrado__label--button1 button">Calcular el perímetro</button>
+                    <button type="button" onclick="calcularAreaTriangulo()" class="form-cuadrado__label--button2 button">Calcular el área</button>
                 </label>
             </form>
         </div>

@@ -6,7 +6,7 @@
 // Área del círculo = Radio al cuadrado * PI.
 
 
-// Código para el cuadrado:
+// ------------ Código para el cuadrado:
 
 console.group("Cuadrados")
 
@@ -30,7 +30,7 @@ areaCuadrado(56);
 console.groupEnd();
 
 
-// Código para el triángulo: 
+//------------- Código para el triángulo: 
 
 console.group("Triangulos")
 
@@ -42,15 +42,15 @@ console.group("Triangulos")
 // const areaTriangulo = (baseTriangulo * alturaTriangulo) / 2; // definimos dentro de paréntesis para que ejecute primero esa operación
 
 function perimetroTriangulo(lado1, lado2, base) {
-    return lado1 + lado2 + base;
+    suma = lado1 + lado2 + base;
+    console.log(typeof suma);
+    console.log(suma);
+    return suma;
 }
 
 function areaTriangulo(base, altura) {
     return (base * altura) / 2; 
 }
-
-perimetroTriangulo(23, 12, 5);
-areaTriangulo(5, 23);
 
 // console.log(
 //     `El lado 1 mide: ${ladoTriangulo1}cm, 
@@ -63,7 +63,7 @@ areaTriangulo(5, 23);
 console.groupEnd();
 
 
-// Código para el círculo:
+// ------------ Código para el círculo:
 
 console.group("Círculos")
 
@@ -102,6 +102,9 @@ console.groupEnd();
 
 // interactuar con HTML 
 
+
+// ------------ cuadrado:
+
 function calcularPerimetroCuadrado() {
     const input = document.getElementById("input-cuadrado");
     const valor = input.value
@@ -115,3 +118,32 @@ function calcularAreaCuadrado() {
     const area = areaCuadrado(valor); 
     alert(`El Área del cuadrado es: ${area}`);
 }
+
+
+// ------------ Triángulo:
+
+// perímetro del triángulo = Suma de sus 3 lados
+function calcularPerimetroTriangulo() {
+    const input1 = document.getElementById("lado-triangulo-1");
+    const lado1 = Number(input1.value);
+    const input2 = document.getElementById("lado-triangulo-2")
+    const lado2 = Number(input2.value); 
+    const base = document.getElementById("base-triangulo");
+    const baseT = Number(base.value); 
+    const perimetro = perimetroTriangulo(lado1, lado2, baseT);
+    alert(`El perimetro del triangulo es: ${Number(perimetro)}`)
+} 
+
+// Área del triángulo = Base * altura / 2
+function calcularAreaTriangulo() {
+    const base = document.getElementById("base-triangulo");
+    const baseT = base.value; 
+    const altura = document.getElementById("altura-triangulo");
+    const alturaT = altura.value;
+    const areaDelTriangulo = areaTriangulo(baseT, alturaT)
+    alert(`El Área del triangulo es: ${areaDelTriangulo}`) 
+}
+
+
+// ------------ Círculo:
+
