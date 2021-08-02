@@ -178,3 +178,33 @@ function calcularAreaCirculo() {
 }
 
 
+
+
+
+// Calcular altura triángulo isóceles
+
+// Math.sqrt(a**2 - b / 2 ** 2)
+
+
+function ladosTrianguloIsoc(ladoa, ladob, ladoc) {
+    if(ladoa === ladob) {
+        resultado = ladoa + ladob + ladoc; 
+        console.log(`La suma de sus lados es: ${Number(resultado)}`);
+    } else if(ladob === ladoc) {
+        resultado = ladoa + ladob + ladoc; 
+        console.log(`La suma de sus lados es: ${Number(resultado)}`);
+    } else if(ladoa == ladoc) {
+        resultado = ladoa + ladob + ladoc; 
+        console.log(`La suma de sus lados es: ${Number(resultado)}`);
+    } else {
+        console.log('No es un triángulo isóceles')
+    }
+}
+
+function alturaIsoc(ladoa, ladob, ladoc) {
+    ladosTrianguloIsoc(ladoa, ladob, ladoc);
+    const altura = Math.sqrt(ladoa ** 2 - ladob ** 2 / 4);
+    console.log(altura);
+}
+
+alturaIsoc(20, 20, 10);
