@@ -178,6 +178,10 @@ function calcularAreaCirculo() {
 }
 
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 77004a168ddb496cb78e672116a6351d0f89cc85
 
 
 
@@ -208,3 +212,8 @@ function alturaIsoc(ladoa, ladob, ladoc) {
 }
 
 alturaIsoc(20, 20, 10);
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 8654b10e6a48f2a80fae935d42804df98822f88c
+>>>>>>> 77004a168ddb496cb78e672116a6351d0f89cc85
