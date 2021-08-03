@@ -5,8 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calcular Porcentajes y descuentos</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    
+    <h1 class="title">Calcular <span class="title-span">porcentajes y descuentos</span></h1>
+    <form action="" class="formulario-descuentos">
+        <div class="formulario-descuentos__container1">
+            <label for="precio">
+                <span class="form-span">Ingrese el precio del producto:</span>
+                <input class="form-input" type="number" id="precio" name="precio">
+            </label>
+        </div>
+        <div class="formulario-descuentos__container2">
+            <label for="descuento">
+                <span class="form-span">Ingrese el valor del porcentaje de descuento:</span>
+                <input class="form-input" type="number" id="descuento" name="descuento">
+            </label>
+        </div>
+        <button class="form-button" type="button" onclick="devolverPrecioConDescuento()">Calcular el descuento</button>
+    </form>
+    <footer class="footer">
+        <p>Desarrollado por <a href="https://github.com/nivamoli">nivamoli</a></p>
+    </footer>
+    <script src="./descuento.js"></script>
 </body>
 </html>

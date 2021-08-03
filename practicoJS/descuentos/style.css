@@ -1,0 +1,90 @@
+:root {
+    --color-formulario: #2C394B;
+    --color-fondo: #082032;
+    --color-boton: #FF4C29;
+
+}
+
+html {
+    margin: 0;
+    overflow-y: hidden;
+}
+
+body {
+    background-color: var(--color-fondo);
+    color: white;
+    margin: 0;
+    height: calc(100vh - 100px);
+}
+
+
+h1.title {
+    font-size: 50px;
+    text-align: center;
+}
+
+span.title-span {
+    color: var(--color-boton);
+ 
+}
+
+form.formulario-descuentos {
+    background-color: var(--color-formulario);
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 500px;
+    width: 350px;
+    margin: 0 auto;
+    padding: 0 40px;
+    text-align: center;
+}
+
+span.form-span {
+    font-size: 20px;
+}
+
+input.form-input {
+    display: block;
+    margin: 0 auto;
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 10px;
+    outline-color: var(--color-boton);
+}
+
+button.form-button {
+    padding: 15px;
+    width: 250px;
+    margin: 0 auto;
+    border-radius: 50px;
+    background-color: var(--color-boton);
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+footer.footer {
+    height: 50px;
+    background-color: var(--color-boton);
+    margin: 0;
+    padding: 0;
+    margin-top: 100px;
+}
+
+footer.footer p {
+    padding-top: 15px;
+    text-align: center;
+}
+
+footer.footer p a {
+    text-decoration: none;
+    color: white;
+}
+
+footer.footer p a:hover {
+    text-decoration: underline;
+}
