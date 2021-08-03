@@ -14,7 +14,7 @@ body {
     background-color: var(--color-fondo);
     color: white;
     margin: 0;
-    height: calc(100vh - 100px);
+    height: 100vh;
 }
 
 
@@ -59,6 +59,7 @@ button.form-button {
     padding: 15px;
     width: 250px;
     margin: 0 auto;
+    margin-bottom: 20px;
     border-radius: 50px;
     background-color: var(--color-boton);
     border: none;
@@ -68,15 +69,16 @@ button.form-button {
 }
 
 footer.footer {
-    height: 50px;
+    height: 10vh;
+    position: relative;
     background-color: var(--color-boton);
     margin: 0;
     padding: 0;
-    margin-top: 100px;
+    margin-top: 60px;
 }
 
 footer.footer p {
-    padding-top: 15px;
+    padding-top: 25px;
     text-align: center;
 }
 
