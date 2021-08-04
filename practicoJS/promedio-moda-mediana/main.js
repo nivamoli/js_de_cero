@@ -19,14 +19,12 @@ const lista1 = [
 function mediaAritmetica(arr) {
     const sumaLista = lista1.reduce(function(varlorAcum = 0, elemento) {
         varlorAcum = varlorAcum + elemento; 
-        return varlorAcum
+        return varlorAcum;
     })
     // reduce recibo una función como argumento
     const promedio = sumaLista / lista1.length;
     return console.log(promedio);
 }
-
-mediaAritmetica(lista1);
 
 // function mediaAritmetica(arr) {
 //     let sumaLista1 = 0;
@@ -53,10 +51,52 @@ mediaAritmetica(lista1);
 // 10 14 25 40 = Se suman los 2 elementos de la mitad / 2 
 
 
-function mediana() {
-    
+function mediaAritmetica(lista2) {
+    const sumaLista = lista2.reduce(function(varlorAcum = 0, elemento) {
+        varlorAcum = varlorAcum + elemento; 
+        return varlorAcum;
+    })
+    // reduce recibo una función como argumento
+    const promedio = sumaLista / lista2.length;
+    return promedio;
 }
 
+const lista2 = [
+    20,
+    50,
+    70,
+    100,
+    200,
+    400,
+    500,
+    600
+]
+
+function esPar(numero) {
+    if(numero % 2 === 0) {
+        return true;
+    } else {
+        return false
+    }
+}
+
+function mediana(arr) {
+    let mediana;
+    const mitadLista = parseInt(lista2.length / 2)
+    if (esPar(lista2.length)) {
+        const elemento1 = lista2[mitadLista - 1];
+        const elemento2 = lista2[mitadLista];
+        const promedio1y2 = mediaAritmetica([elemento1, elemento2]);
+        mediana = promedio1y2;
+        console.log(mediana);
+    } else {
+        mediana = lista2[mitadLista];
+        console.log(mediana);
+
+    }
+} 
+
+mediana(lista2);
 
 
 
