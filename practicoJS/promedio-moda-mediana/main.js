@@ -113,7 +113,37 @@ mediana(lista2);
 // no solamente son números.
 
 
-function moda() {
+const lista3 = [
+    1,
+    2,
+    4,
+    5,
+    5,
+    5,
+    6,
+    9
+];
 
-}
+const listaCount = {};
 
+lista3.map(function(elemento) {
+        if(listaCount[elemento]) {
+            listaCount[elemento] += 1
+        } else {
+            listaCount[elemento] = 1; 
+        }
+});
+
+console.log(listaCount);
+
+let countArray = Object.entries(listaCount).sort(
+    function(valorAcumulado, nuevoValor) {
+        return valorAcumulado[1] - nuevoValor[1];
+    }
+); 
+
+console.log(countArray)
+
+const moda = countArray[countArray.length - 1]
+
+console.log(moda);
